@@ -3,6 +3,9 @@ __author__ = 'michaelluo'
 from ImageCompare import compareImagesToDB
 import time
 import socket
+import base64
+import os.path
+
 
 test_pic = 'SimilarNoFlash.jpg' #testing this pic against all pics in our db;
 db = [
@@ -47,15 +50,41 @@ serversocket.bind((socket.gethostname(), 5069))
 #become a server socket
 serversocket.listen(5)
 print 'listening'
+
+
+def readImage():
+    data = ''
+    while (1):
+        dataRecv = conn.recv(1024)
+        data += dataRecv
+        if '\r\n\r\n' in dataRecv:
+            print 'broken'
+            break;
+        else:
+            print 'looping'
+    return data
+
 while 1:
     #accept connections from outside
     (conn, address) = serversocket.accept()
     print 'accepted'
     print conn
     print 'listening for data'
-    data = conn.recv(1024)
+
+
+    data = readImage()
+
     print 'done listening for data'
     print data
+
+    imgdata = base64.b64decode(data)
+
+    if not os.path.isfile('some_image.jpg'):
+        filename = 'some_image.jpg'  # I assume you have a way of picking unique filenames
+    else:
+        filename = 'some_image1.jpg'
+    with open(filename, 'wb') as f:
+        f.write(imgdata)
     if not data: break
-    conn.sendall(data)
+
     conn.close()
