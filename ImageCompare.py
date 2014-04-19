@@ -61,19 +61,31 @@ def PrintOutStats(db, test_pic):
 def compareImagesToDB(test_pic, db):
     a = [fe(db[i][2]) for i in range(len(db))]
     b = [ff(db[i][2]) for i in range(len(db))]
+    returnMe = []
     test_a = fe(test_pic)
     test_b = ff(test_pic)
+    db2 = []
     for k in range(len(db)):
         for i in range(10):
             db[k][1] += abs(b[k][i] - test_b[i]) * 100.0 / (sum(b[k]) + sum(test_b))
             for j in range(4):
                 db[k][0] += abs(a[k][i][j] - test_a[i][j])
 
-
+        if (((db[k][0] / 3600.0) > 5) and (db[k][1] > 5)):
+            subtract = abs((db[k][0] / 3600.0) - db[k][1])
+            print subtract
+            if (subtract > 5):
+                match = 'true'
+                print 'not part'
+            db2.append([0, 0, db[k][2]])
+        else:
+            print 'similar'
+            returnMe.append(db[k][2])
 
     db.sort()
 
     PrintOutStats(db, test_pic)
 
+    return returnMe, db2
 
 
