@@ -61,23 +61,25 @@ def readImage():
             print 'broken'
             break;
         else:
-            print 'looping'
+            print 'looping for more data'
     return data
 
 while 1:
     #accept connections from outside
+    print 'listening for data'
     (conn, address) = serversocket.accept()
     print 'accepted'
     print conn
-    print 'listening for data'
+
 
 
     data = readImage()
-
+    #data = conn.recv(102)
     print 'done listening for data'
     print data
 
     imgdata = base64.b64decode(data)
+    #imgdata = data
 
     if not os.path.isfile('some_image.jpg'):
         filename = 'some_image.jpg'  # I assume you have a way of picking unique filenames
