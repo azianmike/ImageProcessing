@@ -5,6 +5,7 @@ import time
 import socket
 import base64
 import os.path
+import json
 
 
 test_pic = 'SimilarNoFlash.jpg' #testing this pic against all pics in our db;
@@ -52,7 +53,7 @@ serversocket.listen(5)
 print 'listening'
 
 
-def readImage():
+def readJSON():
     data = ''
     while (1):
         dataRecv = conn.recv(1024)
@@ -60,9 +61,8 @@ def readImage():
         if '\r\n\r\n' in dataRecv:
             print 'broken'
             break;
-        else:
-            print 'looping for more data'
-    return data
+
+    return data[:-4]
 
 while 1:
     #accept connections from outside
@@ -73,19 +73,20 @@ while 1:
 
 
 
-    data = readImage()
+    data = json.loads(readJSON())
+    print data[0]
+    print data[1].keys()
     #data = conn.recv(102)
     print 'done listening for data'
-    print data
+    #print data
 
-    imgdata = base64.b64decode(data)
+    filename = data[1].keys()[0]
+    imgdata = base64.b64decode(data[1][filename])
     #imgdata = data
 
-    if not os.path.isfile('some_image.jpg'):
-        filename = 'some_image.jpg'  # I assume you have a way of picking unique filenames
-    else:
-        filename = 'some_image1.jpg'
-    with open(filename, 'wb') as f:
+    imgIndx = filename.rfind('/')
+    imgName = filename[imgIndx+1:]
+    with open(imgName, 'wb') as f:
         f.write(imgdata)
     if not data: break
 
