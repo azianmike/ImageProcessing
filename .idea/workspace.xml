@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af14e8b3-b91c-47d1-ac71-4cf0114b306d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UserMongoDB.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -45,10 +46,19 @@
       <file leaf-file-name="Main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="6" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.25339368" vertical-offset="792" max-vertical-offset="1470">
+            <state line="93" column="81" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.4117647" vertical-offset="1122" max-vertical-offset="1815">
               <folding>
                 <element signature="e#27#69#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMongoDB.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserMongoDB.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="535" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,6 +105,7 @@
         <option value="$PROJECT_DIR$/ImageSharpenTest.py" />
         <option value="$PROJECT_DIR$/ImageCompare.py" />
         <option value="$PROJECT_DIR$/TestConnect.py" />
+        <option value="$PROJECT_DIR$/UserMongoDB.py" />
         <option value="$PROJECT_DIR$/Main.py" />
       </list>
     </option>
@@ -159,7 +170,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/pypy/pypy-2.2.1-win32/pypy.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SocialEvolution" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -477,7 +488,11 @@
       <created>1398143628928</created>
       <updated>1398143628928</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added json support">
+      <created>1398272591828</created>
+      <updated>1398272591828</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -489,7 +504,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920635" sideWeight="0.6704918" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920635" sideWeight="0.6704918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -522,12 +537,73 @@
     <MESSAGE value="Accepting connections!" />
     <MESSAGE value="Trying to figure out sending over large images" />
     <MESSAGE value="accepting images!" />
-    <option name="LAST_COMMIT_MESSAGE" value="accepting images!" />
+    <MESSAGE value="Added json support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added json support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1470">
+          <folding>
+            <element signature="e#27#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestConnect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="29325" max-vertical-offset="31995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1470">
+          <folding>
+            <element signature="e#27#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestConnect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
@@ -702,9 +778,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UserMongoDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="535" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="6" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.25339368" vertical-offset="792" max-vertical-offset="1470">
+        <state line="93" column="81" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.4117647" vertical-offset="1122" max-vertical-offset="1815">
           <folding>
             <element signature="e#27#69#0" expanded="true" />
           </folding>

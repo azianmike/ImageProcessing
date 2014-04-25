@@ -6,8 +6,7 @@ import socket
 import base64
 import os.path
 import json
-
-
+from pymongo import MongoClient
 test_pic = 'SimilarNoFlash.jpg' #testing this pic against all pics in our db;
 db = [
 
@@ -64,6 +63,40 @@ def readJSON():
 
     return data[:-4]
 
+
+def saveImageData(data):
+
+    print data[0]
+    print data[1].keys()
+    #data = conn.recv(102)
+    print 'done listening for data'
+    #print data
+    filename = data[1].keys()[0]
+    imgdata = base64.b64decode(data[1][filename])
+    #imgdata = data
+    imgIndx = filename.rfind('/')
+    imgName = filename[imgIndx + 1:]
+    with open(imgName, 'wb') as f:
+        f.write(imgdata)
+
+def register(data):
+    print 'register'
+    print data
+    client = MongoClient('localhost', 27017)  #connecting to mongodb on localhost
+
+    db = client['userDB'].users  #connecting to the userDB database, then going to 'users' collection
+    userEmail = data['user_email']
+    password = data['password']
+    firstOne = db.find_one({'email':userEmail})  #finding the first one
+    if firstOne is None: #means email does not exist in db, add into db
+        lastUserID = db.find().sort('userID', -1).limit(1)
+        lastUserNUM = int(lastUserID[0]['userID'])+1
+        testEmail = {'email':userEmail, 'userID':lastUserNUM, 'password':password}
+        db.insert(testEmail)
+        return '1'
+    else:
+        return '0'
+
 while 1:
     #accept connections from outside
     print 'listening for data'
@@ -74,20 +107,10 @@ while 1:
 
 
     data = json.loads(readJSON())
-    print data[0]
-    print data[1].keys()
-    #data = conn.recv(102)
-    print 'done listening for data'
-    #print data
+    if data['function'] == 'register':
+        successful = register(data)
+        conn.send(successful)
+    #saveImageData(data)
 
-    filename = data[1].keys()[0]
-    imgdata = base64.b64decode(data[1][filename])
-    #imgdata = data
-
-    imgIndx = filename.rfind('/')
-    imgName = filename[imgIndx+1:]
-    with open(imgName, 'wb') as f:
-        f.write(imgdata)
-    if not data: break
 
     conn.close()
