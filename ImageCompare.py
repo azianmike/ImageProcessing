@@ -85,7 +85,7 @@ def compareImagesToDB(test_pic, db):
     db.sort()
 
     PrintOutStats(db, test_pic)
-
+    returnMe.append(test_pic)
     return returnMe, db2
 
 

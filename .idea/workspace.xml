@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af14e8b3-b91c-47d1-ac71-4cf0114b306d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageCompareStoreToMongo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageCompare.py" afterPath="$PROJECT_DIR$/ImageCompare.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -18,6 +20,7 @@
     <SUITE FILE_PATH="coverage/ImageProcessing$ImSim_20110309.coverage" NAME="ImSim_20110309 Coverage Results" MODIFIED="1397868583078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ImageProcessing$ImageSharpen.coverage" NAME="ImageSharpen Coverage Results" MODIFIED="1392956082819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ImageProcessing$ImageComparison.coverage" NAME="ImageComparison Coverage Results" MODIFIED="1392876820165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageProcessing$ImageCompareStoreToMongo.coverage" NAME="ImageCompareStoreToMongo Coverage Results" MODIFIED="1398660104143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ImageProcessing$TestConnect.coverage" NAME="TestConnect Coverage Results" MODIFIED="1398141208075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ImageProcessing$Main.coverage" NAME="Main Coverage Results" MODIFIED="1397934307630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -36,18 +39,29 @@
       <file leaf-file-name="ImageCompare.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageCompare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
+            <state line="88" column="19" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImageCompareStoreToMongo.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ImageCompareStoreToMongo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="739" selection-end="739" vertical-scroll-proportion="0.69574034" vertical-offset="107" max-vertical-offset="600">
+              <folding>
+                <element signature="e#27#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="38" selection-start="3375" selection-end="3375" vertical-scroll-proportion="0.36651585" vertical-offset="1422" max-vertical-offset="2085">
+            <state line="65" column="101" selection-start="1644" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="692" max-vertical-offset="1650">
               <folding>
-                <element signature="e#27#69#0" expanded="true" />
+                <element signature="e#27#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,10 +116,11 @@
         <option value="$PROJECT_DIR$/ImageComparison.py" />
         <option value="$PROJECT_DIR$/ImageSharpen.py" />
         <option value="$PROJECT_DIR$/ImageSharpenTest.py" />
-        <option value="$PROJECT_DIR$/ImageCompare.py" />
         <option value="$PROJECT_DIR$/TestConnect.py" />
         <option value="$PROJECT_DIR$/UserMongoDB.py" />
+        <option value="$PROJECT_DIR$/ImageCompare.py" />
         <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/ImageCompareStoreToMongo.py" />
       </list>
     </option>
   </component>
@@ -179,26 +194,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.TestConnect">
-    <configuration default="false" name="ImageComparison" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ImageProcessing" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImageComparison.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.ImageCompareStoreToMongo">
     <configuration default="false" name="ImSim_20110309" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -270,6 +266,25 @@
       <module name="ImageProcessing" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestConnect.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ImageCompareStoreToMongo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ImageProcessing" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImageCompareStoreToMongo.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -359,6 +374,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -380,9 +398,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -426,19 +441,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ImageComparison" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ImSim_20110309" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ImageSharpen" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Main" />
-      <item index="4" class="java.lang.String" itemvalue="Python.TestConnect" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ImSim_20110309" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ImageSharpen" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Main" />
+      <item index="3" class="java.lang.String" itemvalue="Python.TestConnect" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ImageCompareStoreToMongo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.TestConnect" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ImSim_20110309" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ImageSharpen" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ImageComparison" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ImageCompareStoreToMongo" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TestConnect" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Main" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ImSim_20110309" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ImageSharpen" />
       </list>
     </recent_temporary>
   </component>
@@ -495,7 +510,11 @@
       <created>1398399375382</created>
       <updated>1398399375382</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Got login working">
+      <created>1398483491770</created>
+      <updated>1398483491770</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -507,20 +526,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920635" sideWeight="0.6704918" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920635" sideWeight="0.6704918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27496383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24602026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -542,12 +561,82 @@
     <MESSAGE value="accepting images!" />
     <MESSAGE value="Added json support" />
     <MESSAGE value="added mongodb connection and got user registration working" />
-    <option name="LAST_COMMIT_MESSAGE" value="added mongodb connection and got user registration working" />
+    <MESSAGE value="Got login working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got login working" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="36" selection-start="2050" selection-end="2050" vertical-scroll-proportion="0.0" vertical-offset="927" max-vertical-offset="2085">
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserMongoDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="535" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestConnect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="29325" max-vertical-offset="31995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="31" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2085">
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserMongoDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="535" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestConnect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="29325" max-vertical-offset="31995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
@@ -559,7 +648,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="34" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1815">
           <folding>
-            <element signature="e#27#69#0" expanded="true" />
+            <element signature="e#27#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -596,7 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1470">
           <folding>
-            <element signature="e#27#69#0" expanded="true" />
+            <element signature="e#27#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -626,7 +715,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1470">
           <folding>
-            <element signature="e#27#69#0" expanded="true" />
+            <element signature="e#27#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -656,7 +745,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="0" selection-start="1998" selection-end="1998" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1455">
           <folding>
-            <element signature="e#27#69#0" expanded="true" />
+            <element signature="e#27#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -686,7 +775,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="4" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0" vertical-offset="822" max-vertical-offset="1425">
           <folding>
-            <element signature="e#27#69#0" expanded="true" />
+            <element signature="e#27#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -716,7 +805,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="4" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0" vertical-offset="982" max-vertical-offset="1425">
           <folding>
-            <element signature="e#27#69#0" expanded="true" />
+            <element signature="e#27#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -798,13 +887,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestConnect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -826,11 +908,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="19" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="38" selection-start="3375" selection-end="3375" vertical-scroll-proportion="0.36651585" vertical-offset="1422" max-vertical-offset="2085">
+        <state line="65" column="101" selection-start="1644" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="692" max-vertical-offset="1650">
           <folding>
-            <element signature="e#27#69#0" expanded="true" />
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompareStoreToMongo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="739" selection-end="739" vertical-scroll-proportion="0.69574034" vertical-offset="107" max-vertical-offset="600">
+          <folding>
+            <element signature="e#27#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
