@@ -1,7 +1,7 @@
 __author__ = 'michaelluo'
 
 import time
-from ImageCompare import compareImagesToDB
+from ImageCompare import compareImages
 from pymongo import MongoClient
 
 test_pic = 'SimilarNoFlash.jpg' #testing this pic against all pics in our db;
@@ -22,14 +22,14 @@ db = [
 
 start_time = time.time()
 lengthOfArray = len(db)
-client = MongoClient('localhost', 27017)  #connecting to mongodb on localhost
+# client = MongoClient('localhost', 27017)  #connecting to mongodb on localhost
 
-db = client['userDB'].imageData
+# db = client['userDB'].imageData
 
 while(len(db)!=0):
-    returnMe, db = compareImagesToDB(db.pop()[2], db)
+    returnMe, db = compareImages(db.pop()[2], db)
 
-    # print 'returned that are similar ' + str(returnMe)
-    # print 'returned that are not' + str(db)
+    print 'returned that are similar ' + str(returnMe)
+    print 'returned that are not' + str(db)
 
 print str(time.time() - start_time) + " seconds for " + str(lengthOfArray)

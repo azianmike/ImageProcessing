@@ -5,6 +5,7 @@ import base64
 import os
 import json
 from pymongo import MongoClient
+import ImageCompareFolder
 
 def readJSON():
     data = ''
@@ -23,6 +24,14 @@ def saveImageData(data):
     userIDFolder = data['userID']
     imageArray = data['image']
     firstImage = imageArray[0]
+    imagesLeft = data['images left']  #if 0, call imagecompare on folder
+
+
+    returnFolder = -1
+    print imagesLeft
+    if imagesLeft == 0:
+        returnFolder = userIDFolder
+
 
     filename = firstImage.keys()[0]
     if not os.path.isdir(userIDFolder):
@@ -36,8 +45,7 @@ def saveImageData(data):
     dirName = userIDFolder+'/'+imgName
     with open(dirName, 'wb') as f:
         f.write(imgData)
-    print 'done writing image'
-    return '1'
+    return '1', str(returnFolder)
 
 
 def register(data):
@@ -97,8 +105,11 @@ while 1:
         successful = login(data)
         conn.send(successful)
     elif data['function'] == 'upload':
-        successful = saveImageData(data)
+        successful, returnFolder = saveImageData(data)
         conn.send(successful)
+        print returnFolder
+        if returnFolder != -1:
+            print 'DONE!' + str(returnFolder)
     #saveImageData(data)
 
 
