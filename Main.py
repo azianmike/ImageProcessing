@@ -5,7 +5,8 @@ import base64
 import os
 import json
 from pymongo import MongoClient
-import ImageCompareFolder
+from ImageCompareFolder import sendComparedImagesGCM
+from multiprocessing import Process
 
 def readJSON():
     data = ''
@@ -40,7 +41,7 @@ def saveImageData(data):
     imgData = base64.b64decode(firstImage[filename])
     #imgdata = data
     imgIndx = filename.rfind('/')
-    imgName = filename[imgIndx + 1:]
+    imgName = filename.replace('/', '%')
 
     dirName = userIDFolder+'/'+imgName
     with open(dirName, 'wb') as f:
@@ -56,11 +57,12 @@ def register(data):
     db = client['userDB'].users  #connecting to the userDB database, then going to 'users' collection
     userEmail = data['user_email']
     password = data['password']
+    gcm_ID = data['gcm_ID']
     firstOne = db.find_one({'email':userEmail})  #finding the first one
     if firstOne is None: #means email does not exist in db, add into db
         lastUserID = db.find().sort('userID', -1).limit(1)
         lastUserNUM = int(lastUserID[0]['userID'])+1
-        testEmail = {'email':userEmail, 'userID':lastUserNUM, 'password':password}
+        testEmail = {'email':userEmail, 'userID':lastUserNUM, 'password':password, 'gcm_ID':gcm_ID}
         db.insert(testEmail)
         return '1'
     else:
@@ -88,15 +90,8 @@ serversocket.bind((socket.gethostname(), 5069))
 #become a server socket
 serversocket.listen(5)
 
-while 1:
-    #accept connections from outside
-    print 'listening for data'
-    (conn, address) = serversocket.accept()
-    print 'accepted'
-    print conn
 
-
-
+def connAccepted(conn):
     data = json.loads(readJSON())
     if data['function'] == 'register':
         successful = register(data)
@@ -107,10 +102,19 @@ while 1:
     elif data['function'] == 'upload':
         successful, returnFolder = saveImageData(data)
         conn.send(successful)
-        print returnFolder
-        if returnFolder != -1:
+        gcm_ID = data['gcm_ID']
+        if returnFolder != '-1':
             print 'DONE!' + str(returnFolder)
-    #saveImageData(data)
-
-
+            sendComparedImagesGCM(returnFolder, gcm_ID)
     conn.close()
+
+while 1:
+    #accept connections from outside
+    print 'listening for data'
+    (conn, address) = serversocket.accept()
+    print 'accepted'
+    print conn
+    p = Process(target=connAccepted, args=(conn,))
+    p.start()
+    print 'process id:' + str(p.pid)
+
