@@ -51,7 +51,7 @@ def saveImageData(data):
 
 def register(data):
     print 'register'
-    print data
+    #print data
     client = MongoClient('localhost', 27017)  #connecting to mongodb on localhost
 
     db = client['userDB'].users  #connecting to the userDB database, then going to 'users' collection
@@ -72,14 +72,18 @@ def login(data):
     print 'register'
     print data
     client = MongoClient('localhost', 27017)  #connecting to mongodb on localhost
-
+    print '1'
     db = client['userDB'].users  #connecting to the userDB database, then going to 'users' collection
+    print '2'
     userEmail = data['user_email']
     password = data['password']
     firstOne = db.find_one({'email':userEmail, 'password':password})  #finding the first one
+    print '3'
     if firstOne is None: #means email does not exist in db, add into db
+        print 'returns'
         return '-1'
     else:
+        print 'returns'
         return str(firstOne['userID'])
 
 #create an INET, STREAMing socket
@@ -93,15 +97,18 @@ serversocket.listen(5)
 
 def connAccepted(conn):
     data = json.loads(readJSON())
+    print data
     if data['function'] == 'register':
         successful = register(data)
-        conn.send(successful)
+        conn.send(successful+'\n')
     elif data['function'] == 'login':
         successful = login(data)
-        conn.send(successful)
+        print successful
+        conn.send(successful+'\n')
+        print 'done sending'
     elif data['function'] == 'upload':
         successful, returnFolder = saveImageData(data)
-        conn.send(successful)
+        conn.send(successful+'\n')
         gcm_ID = data['gcm_ID']
         if returnFolder != '-1':
             print 'DONE!' + str(returnFolder)

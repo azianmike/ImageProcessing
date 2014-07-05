@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af14e8b3-b91c-47d1-ac71-4cf0114b306d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ImageProcessing.iml" afterPath="$PROJECT_DIR$/.idea/ImageProcessing.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageSharpen.py" afterPath="$PROJECT_DIR$/ImageSharpen.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ImageProcessing.iws" />
@@ -14,15 +22,15 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ImageProcessing$ImSim_20110309.coverage" NAME="ImSim_20110309 Coverage Results" MODIFIED="1397868583078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ImageProcessing$TestGCM.coverage" NAME="TestGCM Coverage Results" MODIFIED="1399168292115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ImageProcessing$ImageSharpen.coverage" NAME="ImageSharpen Coverage Results" MODIFIED="1392956082819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ImageProcessing$TestGCM3.coverage" NAME="TestGCM3 Coverage Results" MODIFIED="1399158948580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ImageProcessing$ImageComparison.coverage" NAME="ImageComparison Coverage Results" MODIFIED="1392876820165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ImageProcessing$ImageCompareStoreToMongo.coverage" NAME="ImageCompareStoreToMongo Coverage Results" MODIFIED="1398660104143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ImageProcessing$TestConnect.coverage" NAME="TestConnect Coverage Results" MODIFIED="1398141208075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ImageProcessing$TestGCM2.coverage" NAME="TestGCM2 Coverage Results" MODIFIED="1399087416250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ImageProcessing$Main.coverage" NAME="Main Coverage Results" MODIFIED="1397934307630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageProcessing$TestGCM2.coverage" NAME="TestGCM2 Coverage Results" MODIFIED="1399087416250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageProcessing$TestGCM.coverage" NAME="TestGCM Coverage Results" MODIFIED="1399168292115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageProcessing$TestConnect.coverage" NAME="TestConnect Coverage Results" MODIFIED="1398141208075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageProcessing$ImSim_20110309.coverage" NAME="ImSim_20110309 Coverage Results" MODIFIED="1397868583078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageProcessing$ImageSharpen.coverage" NAME="ImageSharpen Coverage Results" MODIFIED="1392956082819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageProcessing$ImageCompareStoreToMongo.coverage" NAME="ImageCompareStoreToMongo Coverage Results" MODIFIED="1398660104143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageProcessing$ImageComparison.coverage" NAME="ImageComparison Coverage Results" MODIFIED="1392876820165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageProcessing$TestGCM3.coverage" NAME="TestGCM3 Coverage Results" MODIFIED="1399158948580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -39,8 +47,11 @@
       <file leaf-file-name="Main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="68" selection-start="2353" selection-end="2357" vertical-scroll-proportion="0.67873305" vertical-offset="645" max-vertical-offset="1800">
-              <folding />
+            <state vertical-scroll-proportion="0.14822134" vertical-offset="180" max-vertical-offset="1995">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding>
+                <element signature="e#27#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,7 +59,8 @@
       <file leaf-file-name="ImageCompareStoreToMongo.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageCompareStoreToMongo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -57,7 +69,8 @@
       <file leaf-file-name="SendGCM.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SendGCM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="38" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="585">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -66,7 +79,8 @@
       <file leaf-file-name="ImageCompare.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageCompare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="5" selection-start="3343" selection-end="3343" vertical-scroll-proportion="0.0" vertical-offset="1740" max-vertical-offset="1905">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1740" max-vertical-offset="1905">
+              <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -75,7 +89,8 @@
       <file leaf-file-name="ImageCompareFolder.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageCompareFolder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="58" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="585">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -111,15 +126,16 @@
         <option value="$PROJECT_DIR$/TestGCM.py" />
         <option value="$PROJECT_DIR$/ImageCompare.py" />
         <option value="$PROJECT_DIR$/SendGCM.py" />
-        <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/ImageCompareFolder.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="242" />
     <option name="y" value="22" />
-    <option name="width" value="1093" />
-    <option name="height" value="760" />
+    <option name="width" value="1558" />
+    <option name="height" value="1109" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -135,7 +151,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -147,7 +163,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -168,14 +183,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DevCon Presentation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -367,7 +383,7 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -473,23 +489,8 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing" SSL_PROTOCOLS="all">
     <configuration useDefault="false">C:\Users\Michael\AppData\Roaming\Subversion</configuration>
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -549,19 +550,23 @@
       <created>1399175157718</created>
       <updated>1399175157718</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Got multiprocessing working&#10;Got correct sending of GCM working after processing!">
+      <created>1402441526931</created>
+      <updated>1402441526931</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1093" height="760" extended-state="0" />
-    <editor active="false" />
+    <frame x="242" y="22" width="1558" height="1109" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24794145" sideWeight="0.6704918" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20346598" sideWeight="0.6704918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39942113" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -569,16 +574,19 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -612,232 +620,319 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+    <entry file="file://$PROJECT_DIR$/SendGCM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="166" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1905">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="585">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1905">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1740" max-vertical-offset="1905">
+          <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+    <entry file="file://$PROJECT_DIR$/ImageCompareFolder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="585">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="31" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2085">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1800">
+          <caret line="79" column="68" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompareStoreToMongo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendGCM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="585">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1740" max-vertical-offset="1905">
+          <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompareFolder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="585">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1905">
+          <caret line="10" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1905">
+          <caret line="10" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
+          <caret line="90" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2085">
+          <caret line="106" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserMongoDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="535" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="495" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="495">
+          <caret line="23" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestConnect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="29325" max-vertical-offset="31995" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <caret line="8" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
+          <caret line="90" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="34" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1815">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1815">
+          <caret line="87" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserMongoDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="535" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="495" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="495">
+          <caret line="23" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestConnect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="29325" max-vertical-offset="31995" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <caret line="8" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+          <caret line="90" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1470">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1470">
+          <caret line="91" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestConnect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="29325" max-vertical-offset="31995" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <caret line="8" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+          <caret line="90" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1470">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1470">
+          <caret line="91" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestConnect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31995" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <caret line="8" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1455">
+          <caret line="90" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="1998" selection-end="1998" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1455">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1455">
+          <caret line="79" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestConnect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31995" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="255">
+          <caret line="8" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+          <caret line="90" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="4" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0" vertical-offset="822" max-vertical-offset="1425">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="822" max-vertical-offset="1425">
+          <caret line="89" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestConnect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="50" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="29325" max-vertical-offset="31995" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <caret line="11" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2487" selection-end="2487" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1455">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1455">
+          <caret line="90" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="4" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0" vertical-offset="982" max-vertical-offset="1425">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="982" max-vertical-offset="1425">
+          <caret line="89" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestConnect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="50" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="29325" max-vertical-offset="31995" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ImageSharpen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="20" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="42" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="1513">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <caret line="11" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageSharpen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="391" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
+          <caret line="17" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="42" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="1513">
+        <state vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1440">
+          <caret line="58" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="42" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0" vertical-offset="620" max-vertical-offset="1513">
+        <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="1513">
+          <caret line="58" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageSharpen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="391">
+          <caret line="15" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="1513">
+          <caret line="58" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="620" max-vertical-offset="1513">
+          <caret line="65" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -854,7 +949,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageSharpen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="17" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DifferentSubject.jpg">
@@ -864,17 +961,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestConnect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="8" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserMongoDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="535" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1955" column="0" selection-start="62175" selection-end="62175" vertical-scroll-proportion="0.0" vertical-offset="29325" max-vertical-offset="31950" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="23" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/KindaSimilar2.jpg">
@@ -882,38 +978,45 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImageCompareStoreToMongo.py">
+    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1740" max-vertical-offset="1905">
+          <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImageCompare.py">
+    <entry file="file://$PROJECT_DIR$/ImageCompareStoreToMongo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="5" selection-start="3343" selection-end="3343" vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1875">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SendGCM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="585">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageCompareFolder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="58" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="68" selection-start="2353" selection-end="2357" vertical-scroll-proportion="0.67873305" vertical-offset="645" max-vertical-offset="1800">
-          <folding />
+        <state vertical-scroll-proportion="0.14822134" vertical-offset="180" max-vertical-offset="1995">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="e#27#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
