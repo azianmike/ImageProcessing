@@ -4,6 +4,7 @@ import socket
 import base64
 import os
 import json
+import shutil
 from pymongo import MongoClient
 from ImageCompareFolder import sendComparedImagesGCM
 from multiprocessing import Process
@@ -97,7 +98,6 @@ serversocket.listen(5)
 
 def connAccepted(conn):
     data = json.loads(readJSON())
-    print data
     if data['function'] == 'register':
         successful = register(data)
         conn.send(successful+'\n')
@@ -113,6 +113,12 @@ def connAccepted(conn):
         if returnFolder != '-1':
             print 'DONE!' + str(returnFolder)
             sendComparedImagesGCM(returnFolder, gcm_ID)
+            try:
+                print 'unlink2'
+                if os.path.isdir(returnFolder):  #deletes files in folder to save space
+                    shutil.rmtree(returnFolder)
+            except Exception, e:
+                print e
     conn.close()
 
 while 1:
