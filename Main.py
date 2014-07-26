@@ -97,34 +97,39 @@ serversocket.listen(5)
 
 
 def connAccepted(conn):
-    data = json.loads(readJSON())
-    if data['function'] == 'register':
-        successful = register(data)
-        conn.send(successful+'\n')
-    elif data['function'] == 'login':
-        successful = login(data)
-        print successful
-        conn.send(successful+'\n')
-        print 'done sending'
-    elif data['function'] == 'upload':
-        successful, returnFolder = saveImageData(data)
-        conn.send(successful+'\n')
-        gcm_ID = data['gcm_ID']
-        if returnFolder != '-1':
-            print 'DONE!' + str(returnFolder)
-            sendComparedImagesGCM(returnFolder, gcm_ID)
-            try:
-                print 'unlink2'
-                if os.path.isdir(returnFolder):  #deletes files in folder to save space
-                    shutil.rmtree(returnFolder)
-            except Exception, e:
-                print e
-    conn.close()
+    try:
+        data = json.loads(readJSON())
+        if data['function'] == 'register':
+            successful = register(data)
+            conn.send(successful+'\n')
+        elif data['function'] == 'login':
+            successful = login(data)
+            print successful
+            conn.send(successful+'\n')
+            print 'done sending'
+        elif data['function'] == 'upload':
+            successful, returnFolder = saveImageData(data)
+            conn.send(successful+'\n')
+            gcm_ID = data['gcm_ID']
+            if returnFolder != '-1':
+                print 'DONE!' + str(returnFolder)
+                sendComparedImagesGCM(returnFolder, gcm_ID)
+                try:
+                    print 'delete all files'
+                    if os.path.isdir(returnFolder):  #deletes files in folder to save space
+                        shutil.rmtree(returnFolder)
+                except Exception, e:
+                    print e
+        conn.close()
+    except:
+        print 'caught timeout'
 
 while 1:
     #accept connections from outside
     print 'listening for data'
     (conn, address) = serversocket.accept()
+
+    conn.settimeout(30)
     print 'accepted'
     print conn
     p = Process(target=connAccepted, args=(conn,))
