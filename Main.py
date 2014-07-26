@@ -8,18 +8,24 @@ import shutil
 from pymongo import MongoClient
 from ImageCompareFolder import sendComparedImagesGCM
 from multiprocessing import Process
+from PublicIP import getPublicIP
 
 def readJSON():
-    data = ''
-    while (1):
-        dataRecv = conn.recv(1024)
-        data += dataRecv
-        if '\r\n\r\n' in dataRecv:
-            print 'broken'
-            break;
+    try:
+        print 'reading in json data'
+        data = ''
+        while (1):
+            dataRecv = conn.recv(2048)
+            if(len(dataRecv) == 0):
+                raise Exception("caught timeout")
+            data += dataRecv
+            if '\r\n\r\n' in dataRecv:
+                print 'stopped reading in json'
+                break;
 
-    return data[:-4]
-
+        return data[:-4]
+    except:
+        print 'caught timeout while reading'
 
 def saveImageData(data):
 
@@ -47,12 +53,13 @@ def saveImageData(data):
     dirName = userIDFolder+'/'+imgName
     with open(dirName, 'wb') as f:
         f.write(imgData)
-    return '1', str(returnFolder)
+
+    public_ip = getPublicIP()
+    return str(public_ip), str(returnFolder)
 
 
 def register(data):
     print 'register'
-    #print data
     client = MongoClient('localhost', 27017)  #connecting to mongodb on localhost
 
     db = client['userDB'].users  #connecting to the userDB database, then going to 'users' collection
@@ -123,13 +130,13 @@ def connAccepted(conn):
         conn.close()
     except:
         print 'caught timeout'
+        exit(1)
 
 while 1:
     #accept connections from outside
     print 'listening for data'
     (conn, address) = serversocket.accept()
 
-    conn.settimeout(30)
     print 'accepted'
     print conn
     p = Process(target=connAccepted, args=(conn,))
