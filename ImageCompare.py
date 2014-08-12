@@ -103,7 +103,7 @@ def compareImages2(test_pic, db, folderName):
         if (((db[k][0] / 3600.0) < 5) or (db[k][1] < 5)):
             print 'similar'
             subtract = abs((db[k][0] / 3600.0) - db[k][1])
-            if subtract < 5:
+            if subtract <= 5 or ((db[k][0] / 3600.0) + db[k][1])/2 <= 5:
                 returnMe.append(db[k][2])
             else:
                 db2.append([0, 0, db[k][2]])
@@ -114,7 +114,7 @@ def compareImages2(test_pic, db, folderName):
 
     db.sort()
 
-    #PrintOutStats(db, test_pic)
+    PrintOutStats(db, test_pic)
     returnMe.append(test_pic)
     return returnMe, db2
 

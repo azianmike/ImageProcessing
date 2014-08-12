@@ -30,6 +30,11 @@ def readJSON():
 def saveImageData(data):
 
     userIDFolder = data['userID']
+    firstTime = data['firstTime']
+    if firstTime == True: #clean up folder
+        exceptionFolder = userIDFolder
+        print 'cleaning up folder ' + str(exceptionFolder)
+        deleteFiles(exceptionFolder)
     imageArray = data['image']
     firstImage = imageArray[0]
     imagesLeft = data['images left']  #if 0, call imagecompare on folder
@@ -100,7 +105,16 @@ serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # and a well-known port
 serversocket.bind((socket.gethostname(), 5069))
 #become a server socket
-serversocket.listen(5)
+serversocket.listen(5)  #only listens for 5 connections
+
+
+def deleteFiles(returnFolder):
+    try:
+        print 'delete all files in ' + str(returnFolder)
+        if os.path.isdir(returnFolder):  #deletes files in folder to save space
+            shutil.rmtree(returnFolder)
+    except Exception, e:
+        print e
 
 
 def connAccepted(conn):
@@ -121,15 +135,11 @@ def connAccepted(conn):
             if returnFolder != '-1':
                 print 'DONE!' + str(returnFolder)
                 sendComparedImagesGCM(returnFolder, gcm_ID)
-                try:
-                    print 'delete all files'
-                    if os.path.isdir(returnFolder):  #deletes files in folder to save space
-                        shutil.rmtree(returnFolder)
-                except Exception, e:
-                    print e
+                deleteFiles(returnFolder)
         conn.close()
     except:
         print 'caught timeout'
+        conn.close()
         exit(1)
 
 while 1:

@@ -22,12 +22,3 @@ def sendGCM(data, gcm_ID):
     gcm.plaintext_request(registration_id=gcm_ID, data=data2)
     print 'sent GCM for ' + str(gcm_ID)
 
-# listTest = ['hi', 'hi2']
-#
-# sendGCM(str(listTest))
-#
-# returnedData = ''
-# for i in range(4000):
-#     returnedData += 'a'
-# print sys.getsizeof(returnedData)
-# sendGCM(returnedData)

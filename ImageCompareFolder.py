@@ -17,15 +17,15 @@ def compareAllImagesInFolder(folderName):
     while(len(modifiedImageList)!=0):
         returnMe, modifiedImageList = compareImages2(modifiedImageList.pop()[2], modifiedImageList, folderName+'/')
         returnList.append(returnMe)
-        # print 'returned that are similar ' + str(returnMe)
-        # print 'returned that are not' + str(modifiedImageList)
 
     return returnList
 
 def sendComparedImagesGCM(folderName, gcm_ID):
+    start_time = time.time()
     returnedData = compareAllImagesInFolder(str(folderName))
     returnedDataModified = str(returnedData).replace('%','/')
     sendGCM(str(returnedDataModified), gcm_ID)
+    print str(time.time() - start_time)
 
 # start_time = time.time()
 # sendComparedImagesGCM(str(102436))
