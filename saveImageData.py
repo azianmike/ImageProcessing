@@ -8,7 +8,7 @@ from shutil import rmtree
 def saveImageData(data):
 
     try:
-        userIDFolder = '/var/www/sampleapp/ImageProcessing/' + str(data['userID'])
+        userIDFolder = '/var/www/sampleapp/ImageProcessing/' + str(data['userID']) + '/'
         firstTime = data['firstTime']
         if firstTime == True: #clean up folder
             exceptionFolder = userIDFolder

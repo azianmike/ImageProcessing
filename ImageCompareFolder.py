@@ -6,8 +6,9 @@ import time
 from SendGCM import sendGCM
 
 def compareAllImagesInFolder(folderName):
-    print 'folderName'
     imageList = os.listdir(folderName)
+    imageList.sort(key=lambda x: os.path.getmtime(folderName+x))
+    imageList.reverse()
     modifiedImageList = []
     for image in imageList:
         temp = [0,0, image]
