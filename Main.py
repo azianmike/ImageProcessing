@@ -3,12 +3,11 @@ __author__ = 'michaelluo'
 import socket
 import json
 import shutil
-from ImageCompareFolder import sendComparedImagesGCM
 from multiprocessing import Process
 from readJson import readJSON
 from loginAndRegister import login, register
-from saveImageData import saveImageData, deleteFiles
 from MongoAnalytics import storeUserNumberOfImages
+from upload import upload
 
 #create an INET, STREAMing socket
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -17,6 +16,7 @@ serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serversocket.bind((socket.gethostname(), 5069))
 #become a server socket
 serversocket.listen(5)  #only listens for 5 connections
+
 
 
 def connAccepted(conn):
@@ -31,14 +31,8 @@ def connAccepted(conn):
             conn.send(successful+'\n')
             print 'done sending'
         elif data['function'] == 'upload':
-            successful, returnFolder = saveImageData(data)
-            conn.send(successful+'\n')
-            gcm_ID = data['gcm_ID']
-            if returnFolder != '-1':
-                print 'DONE!' + str(returnFolder)
-                sendComparedImagesGCM(returnFolder, gcm_ID)
-                #storeUserNumberOfImages(data, returnFolder)
-                deleteFiles(returnFolder)
+            successCode = upload(conn, data)
+            conn.send(successCode)
         conn.close()
     except:
         print 'caught timeout'
