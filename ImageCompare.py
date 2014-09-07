@@ -39,7 +39,6 @@ def ff(file_name):
             if im.getpixel((x, y)) > sr:
                 res[y / 60] += 1
                 res[x / 60 + 5] += 1
-    #im.show()
     return res
 
 

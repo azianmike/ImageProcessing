@@ -2,7 +2,6 @@ __author__ = 'michaelluo'
 
 import time
 from ImageCompare import compareImages
-from pymongo import MongoClient
 
 test_pic = 'SimilarNoFlash.jpg' #testing this pic against all pics in our db;
 db = [
