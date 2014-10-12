@@ -1,7 +1,7 @@
 __author__ = 'michaelluo'
 
-import httplib, urllib, json
-import ImageCompareFolder
+import httplib
+import json
 
 headers = {"Content-type": "application/json", "Accept": "text/plain"}
 #params = 'hello'

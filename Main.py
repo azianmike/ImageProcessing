@@ -2,12 +2,12 @@ __author__ = 'michaelluo'
 
 import socket
 import json
-import shutil
 from multiprocessing import Process
+
 from readJson import readJSON
-from loginAndRegister import login, register
-from MongoAnalytics import storeUserNumberOfImages
+from LoginAndRegister.loginAndRegister import login, register
 from upload import upload
+
 
 #create an INET, STREAMing socket
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

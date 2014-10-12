@@ -12,8 +12,8 @@ def saveImageData(data):
         firstTime = data['firstTime']
         if firstTime == True: #clean up folder
             exceptionFolder = userIDFolder
-            print 'cleaning up folder ' + str(exceptionFolder)
-            deleteFiles(exceptionFolder)
+            if os.path.isdir(exceptionFolder):
+                deleteFiles(exceptionFolder)
         imageArray = data['image']
         firstImage = imageArray[0]
         imagesLeft = data['images left']  #if 0, call imagecompare on folder

@@ -113,7 +113,7 @@ def compareImages2(test_pic, db, folderName):
 
     db.sort()
 
-    PrintOutStats(db, test_pic)
+    # PrintOutStats(db, test_pic)
     returnMe.append(test_pic)
     return returnMe, db2
 

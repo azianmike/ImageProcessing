@@ -2,7 +2,7 @@ __author__ = 'michaelluo'
 
 import time
 
-from imageCompare.ImageCompare import compareImages
+from ImageCompare import compareImages
 
 
 test_pic = 'SimilarNoFlash.jpg' #testing this pic against all pics in our db;

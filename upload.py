@@ -1,7 +1,7 @@
 __author__ = 'michaelluo'
 
 from saveImageData import saveImageData, deleteFiles
-from ImageCompareFolder import sendComparedImagesGCM
+from imageCompare.ImageCompareFolder import sendComparedImagesGCM
 
 def upload(data):
     successful, returnFolder = saveImageData(data)

@@ -3,7 +3,7 @@ __author__ = 'michaelluo'
 import os
 import time
 
-from imageCompare.ImageCompare import compareImages2
+from ImageCompare import compareImages2
 from SendGCM import sendGCM
 
 
